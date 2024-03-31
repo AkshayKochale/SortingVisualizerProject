@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main
+{
+    position: fixed;
+    top: 50px;
+    left: 40px;
+    overflow-x: scroll;
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+
+.bar
+{
+    margin: 1px ;
+    background-color: rgb(128, 128, 128);
+    height: 20px;
+}
+
+.header
+{
+    padding-left: 1%;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    display:  flex;
+    justify-content: flex-start;
+    gap: 3%;
+    align-items: center;
+}
+
+.header button
+{
+    border: none;
+    padding: 2px 4px;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.input
+{
+    z-index: 1 ;
+    /* border: 1px solid red; */
+    position: relative;
+    width: 25%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    /* margin-left: 7%; */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+.input p
+{
+    color: red;
+}
+
+#range {
+    width: 10%; /* Adjust width as needed */
+    height: 5px; /* Adjust height as needed */
+    -webkit-appearance: none; /* Remove default styles */
+    appearance: none; /* Remove default styles */
+    background-color: white; /* Set the color of the range track */
+    border-radius: 7px; /* Set border radius */
+    outline: none; /* Remove default outline */
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styles */
+    appearance: none; /* Remove default styles */
+    width: 20px; /* Adjust thumb width as needed */
+    height: 20px; /* Adjust thumb height as needed */
+    background-color: #87CEEB; /* Set thumb color */
+    border-radius: 50%; /* Make thumb circular */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.speed
+{
+    color: white;
+    margin: -2%;
+    font-size: large;
+}
+
+h1
+{
+    color: rgb(124, 119, 119);
+    position: absolute;
+    top:50%;
+    left: 20%;
+    font-size: 60px;
+}
+
+.inputBtn
+{
+    padding: 2px;
+    font-weight: 600;
+}
